@@ -1,0 +1,41 @@
+.about_div {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.about_div_h1{
+    width: 100%;
+    text-align: center;
+    margin: 5% auto 2% auto;
+}
+.photo_div{
+    width: 100%;
+    margin: 0 auto; 
+    display: flex;
+    justify-content: center;
+}
+.about_text{
+    width: 75%;
+    margin :0 auto;
+    text-align: left;
+}
+.about_div ul {
+    margin: -15px 10px 5% -20px;
+}
+
+.line {
+    border-bottom: 1px solid grey;
+}
+
+.code-tools-list {
+    display: flex;
+}
+
+@media only screen and (max-width: 767px) {
+    .photo_div{
+        flex-wrap: wrap;
+    }
+    .about_div {
+        overflow: scroll;
+    }
+  }

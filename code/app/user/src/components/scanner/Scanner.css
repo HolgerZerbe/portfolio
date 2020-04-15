@@ -1,0 +1,91 @@
+
+div{
+  box-sizing: border-box;
+}
+.ScannerApp {
+  width: 100%;
+  height: 98%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%; 
+}
+.containerScanner{
+  width: 100%;
+  height:98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:relative; 
+}
+.viewport{
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 72%;
+}
+.viewport video{
+  position: absolute;
+  width: 100%;
+}
+.viewport canvas{
+  width: 100%;
+  z-index: 2;
+}
+#interactive.viewport .over {
+  z-index: 1;
+  position:absolute;
+  height: 85%;
+  width: 85%;
+  margin-top: 6%;
+  top:0;
+}
+.top, .bottom {
+  position: absolute;
+  width: 10%;
+  height: 10%;
+}
+.top {
+  top: 0;
+  border-top: 5px solid #b90606ff;
+}
+.bottom {
+  bottom: 0;
+  border-bottom: 5px solid #b90606ff;
+}
+.left {
+  left: 0;
+  border-left: 5px solid #b90606ff;
+}
+.right {
+  right: 0;
+  border-right: 5px solid #b90606ff;
+}
+#interactive.viewport .anim-box .scanner{
+  width: 100%;
+	height: 3px;
+  background-image: linear-gradient( white,greenyellow );
+  opacity:1;
+  position:relative;
+  box-shadow: 0px -6px 15px 3px greenyellow;
+  animation-name: scan;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+ }
+ @keyframes scan {
+  0% {
+    top: 0%;
+  }  
+  100% {
+    top: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .ScannerApp {
+    margin: 100px auto;
+  }
+}

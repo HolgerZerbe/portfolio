@@ -1,0 +1,10 @@
+_id,ean,productname,hersteller,handelskette,productGroup,brennwertKCAL,kohlenhydrate,zucker,fett,gesaettigte_Fettsaeuren,natrium,protein,ballaststoffe,obstGemueseNuesseAnteil
+ObjectId("5e315de1a37a3716f26c6532"),"["4337185341755","4823482424651"]",kalifonische Walnusskerne,Kaufland Eigenmarke,"["Kaufland"]",Sonstiges,100,11,6.9,63,5.7,0,14.0,6.1,100
+ObjectId("5e383f35d208b4418e9c0100"),"["4001686304648","4001686301326","4001686311264","29038442","4001686323397"]",Goldbären Gummibärchen,Haribo,"["Kaufland"]",Sonstiges,343,77.4,45.6,0.1,0.1,0.03,0,0,0
+ObjectId("5e388d79b22c743a7b4693b3"),"["4001686310229 ","4001686310274"]",Weinland Weingummi,Haribo,"["Kaufland"]",Sonstiges,343,77.4,45.6,0.1,0.1,0.3,6.9,0,0
+ObjectId("5e40261327b540615cc1bd7c"),"["4060800159816"]",Max Cherry Cola,Pepsi,"["Lidl","Kaufland"]",Getraenk,0,0.1,0,0,0,0,0.1,0,0
+ObjectId("5e412b34eb0f8e23886c8108"),"["4009300012719"]",Rooibos Vanille Tee,Teekanne,"["diverse"]",Getraenk,,0.1,0,0.1,0.1,0.04,0.1,0,0
+ObjectId("5e41478558624b314c5f6234"),"["5000112548068","5000112546415"]",Coke Cola,Coca-Cola,"["Lidl","Kaufland"]",Getraenk,42,10.6,10.6,0,0,0,0,0,0
+ObjectId("5e42b7e7526043728c4710df"),"["4056489008095"]",Süßstofftabletten,Cologran,"["Lidl"]",Sonstiges,19,0.1,0.1,0,0,11.81,0,0,0
+ObjectId("5e44261f8ab07c08c064c75f"),"["4060800156525"]",Max Cola,Pepsi,"["Lidl","Kaufland"]",Getraenk,0,0.1,0,0,0,0,0.1,0,0
+ObjectId("5e4d25a928631e164f7ed8da"),"["76145759"]",Toblerone Schweizer Milchschokolade mit Honig und Mandel-Nougat,Mondelez,"["netto"]",Sonstiges,529,61,60,29,17,0.047,5.6,2.4,0

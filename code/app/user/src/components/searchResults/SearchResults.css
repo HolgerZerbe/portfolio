@@ -1,0 +1,85 @@
+.searchResults_div{
+    margin: 50px 0;
+}
+       
+.searchResults_h2 {
+    text-align: center;
+    color: grey;
+}
+
+.trafficLight {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 30px;
+}
+
+.singleTrafficLight {
+    min-width: 21%;
+    display: flex;
+    flex-direction: column;
+    line-height: 56px;
+}
+
+.singleTrafficLightText {
+    text-align: center;
+    font-weight: 800;
+}
+
+.light {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    box-shadow: 5px 5px 3px grey;
+}
+
+.titleResults {
+    color:black;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.nutriscore {
+   display: flex;
+   justify-content: center;
+
+}
+.nutriscore img{
+    width: 50%;
+    height: 20%;
+}
+
+@media (min-width: 990px) {
+    .singleTrafficLightText {
+    text-align: left;
+    margin-left: 10px;
+    }
+}
+
+@media (max-width: 663px) {
+    .titleSatFat {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 767px) {
+    .trafficLight {
+        margin-left: 0;
+    }
+    .searchResults_div {
+        margin: 0 auto 10px auto;
+    }
+}
+
+
+@media (max-width: 989px) {
+    .nutriscore img{
+        width: 75%;
+        height: 30%;
+    }
+}
+
+

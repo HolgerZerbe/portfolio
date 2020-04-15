@@ -1,0 +1,10 @@
+.startPage_div {
+    color: orange;
+}
+
+@media (max-width:767px){
+    .welcome {
+    font-size: 2em;
+    }
+}
+

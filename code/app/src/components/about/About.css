@@ -1,0 +1,6 @@
+.about_div {
+    color: green;
+}
+
+@media only screen and (max-width: 767px) {
+  }

@@ -1,0 +1,28 @@
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.linkNavbar {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(126, 231, 231);
+    color: black;
+    min-width: 20%;
+    height: 30px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5%;
+}
+
+.linkNavbar:hover {
+    background-color: whitesmoke;
+    color: rgb(31, 126, 126);
+    border: 1px solid rgb(31, 126, 126);
+}
+
+
+@media only screen and (max-width: 767px) {}

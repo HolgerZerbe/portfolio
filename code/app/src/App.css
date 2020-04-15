@@ -15,7 +15,7 @@ html body {
 }
 .mainApp {
   max-width: 1200px;
-  height: 100%;
+  min-height: 100%;
   margin: 0 auto;
   background-color: rgb(223, 219, 219);
 }
@@ -26,10 +26,23 @@ html body {
   background-color: rgb(160, 110, 135);
   padding: 10px auto 0 auto;
 }
-.headline {
-  color: black;
+
+
+.headlineBtn {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
   margin-left: 4%;
   margin-top: 15px;
+  margin-right: 4%;
+  padding: 10px 0;
+}
+
+.headline {
+  width: 80%;
+  margin: 0;
+  padding: 0;
+  color: black;
 }
 
 .changingAreaApp {
@@ -38,9 +51,36 @@ html body {
   min-height: 80%;
 }
 
+.languageBtn { 
+  display: flex;
+  justify-content: space-between;
+  margin: auto 0;
+}
+
+.header button {
+  width: 50px;
+  height: 25px;
+  margin-left: 5px;
+  border-style: none;
+  border-radius: 5%;
+  cursor: pointer;
+}
+
+.germanFlag {
+  background: url(/german.png);  
+  background-size: contain;  
+}
+
+.englishFlag {
+  background: url(/english.png);  
+  background-size: contain;  
+}
+
+
 @media only screen and (max-width: 767px) {
   .headline {
+    width: 60%;
     margin-left: 0;
-    text-align: center;
+    font-size: 1.1em;
   }
 }

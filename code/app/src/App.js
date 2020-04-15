@@ -1,15 +1,16 @@
 import React, {Component} from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import { Redirect } from 'react-router'
 import {connect} from 'react-redux';
 
 import Navbar from './components/navbar/Navbar';
-import About from './components/about/About';
-import Impressum from './components/impressum/Impressum';
 import StartPage from './components/startPage/StartPage';
-import NotFound from './components/notFound/NotFound';
+import About from './components/about/About';
 import Portfolio from './components/portfolio/Portfolio';
+import Impressum from './components/impressum/Impressum';
+import NotFound from './components/notFound/NotFound';
+
+import {switchLanguage} from './actions'
 import config from "./config.json";
 
 
@@ -23,7 +24,10 @@ class App extends Component {
         <div className="mainApp">
 
           <div className="header">
-            <h1 className="headline">Holger Zerbe Portfolio</h1>
+            <div className="headlineBtn">
+              <h1 className="headline">Holger Zerbe Portfolio</h1>
+              <div className="languageBtn"><button className="germanFlag" onClick={()=>this.props.switchLanguage(true)}></button><button className="englishFlag" onClick={()=>this.props.switchLanguage(false)}></button></div>
+            </div>
             <Navbar />
           </div>
           <div className="changingAreaApp">
@@ -34,6 +38,7 @@ class App extends Component {
                 <Route exact path="/impressum" component={Impressum} />
                 <Route component={NotFound} />
             </Switch>
+
           </div>
         </div>
       </Router>
@@ -42,9 +47,6 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => ({
-        product: state.product,
-        productFound: state.productFound,
-        error: state.error,
-        message: state.message
+        german:state.german
 })
-export default connect(mapStateToProps, null)(App);
+export default connect(mapStateToProps, {switchLanguage})(App);

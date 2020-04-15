@@ -1,20 +1,21 @@
-import React, { Component } from 'react'
-import './About.css'
+import React, { Component } from 'react';
+import './About.css';
+import { connect } from 'react-redux';
 
 
  class About extends Component {
 
-    state = {
-
-    }
-
     render() {
         return (
             <div className="about_div">
-               Hello from about.js
+               {this.props.german ? <>Hallo von about.js</> : <>Hello from about.js</>} 
             </div>
         )
     }
 }
 
-export default About;
+
+const mapStateToProps = (state) => ({
+    german: state.german
+})
+export default connect(mapStateToProps, null)(About);

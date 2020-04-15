@@ -1,14 +1,20 @@
+import React, { Component } from 'react'
 import './Impressum.css'
-import React from 'react'
+import {connect} from 'react-redux';
 
-function Impressum() {
+class Impressum extends Component {
+    render() {
     return (
         <>
         <div className="impressum_div">
-            Hello from impressum.js
+        {this.props.german ? <>Hallo von impressum.js</> :<>Hello from impressum.js</>}
         </ div>
         </>
-    )
+        )
+    }
 }
 
-export default Impressum
+const mapStateToProps = (state) => ({
+    german: state.german
+})
+export default connect(mapStateToProps, null)(Impressum);

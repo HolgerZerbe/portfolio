@@ -21,8 +21,12 @@
 .linkNavbar:hover {
     background-color: whitesmoke;
     color: rgb(31, 126, 126);
-    border: 1px solid rgb(31, 126, 126);
+    border: 1px solid rgb(31, 126, 126)
 }
 
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width:767px){
+    .linkNavbar {
+    font-size: 0.8em;
+    }
+}

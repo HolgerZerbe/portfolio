@@ -1,10 +1,87 @@
 .startPage_div {
-    color: orange;
+    width: 100%;
+    color: black;
 }
 
-@media (max-width:767px){
+.photo {
+    text-align: center;
+}
+
+.welcome {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.homepage{
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 35px;
+}
+
+.photoStartPage {
+    background-color: lightgrey;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.languageHeadline {
+    text-align: center;
+}
+
+.btnLine {
+    margin: 0 200px;    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.startPage_div button {
+    width: 100px;
+    height: 50px;
+    border-style: none;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+.germanFlag {
+    background: url(/german.png);  
+    background-size: contain;  
+}
+
+.englishFlag {
+    background: url(/english.png);  
+    background-size: contain;  
+}
+
+@media (max-width:767px) {
+    
+    .startPage_div h2 {
+        font-size: 1.1em;
+    }
+    
+    .photoStartPage {
+        width: 150px;
+        height: 150px;
+    }
+    .languageHeadline {
+        font-size: 0.8em;
+    }
+    .homepage {
+        text-align: center;
+        margin-right: 0;
+    }
     .welcome {
-    font-size: 2em;
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    .btnLine {
+        margin: 0;
+    }
+
+    .startPage_div button {
+        width: 80px;
+        height: 40px;
     }
 }
-

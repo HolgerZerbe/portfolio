@@ -7,10 +7,10 @@ import config from "./config.json";
 //         const url = config.host+'/product?ean='+EAN
 //         const result = await fetch(url);
 //         const data = await result.json();
-        
+
 //         console.log(result)
 //         console.log(data)
-    
+
 //         dispatch({
 //             type: 'LOAD_PRODUCT',
 //             value: data
@@ -22,7 +22,7 @@ import config from "./config.json";
 //             value: {error: 503,
 //                     productFound : false}
 //         })
-        
+
 //     }
 // }
 
@@ -46,7 +46,7 @@ import config from "./config.json";
 //             value: {error: 503,
 //                     productFound : false}
 //         })
-        
+
 //     }
 // }
 
@@ -55,7 +55,7 @@ import config from "./config.json";
 //         const url = config.host+'/searchId?id='+id
 //         const result = await fetch(url);
 //         const data = await result.json();
-        
+
 //         // console.log(result)
 //         // console.log(data)
 
@@ -70,7 +70,7 @@ import config from "./config.json";
 //             value: {error: 503,
 //                     productFound : false}
 //         })
-        
+
 //     }
 // }
 
@@ -92,6 +92,17 @@ import config from "./config.json";
 //     })
 // }
 
+export const switchStyle = (linkValue, headerBGValue) => dispatch => {
+
+    dispatch({
+        type: 'SWITCH_STYLE',
+        value: {
+            link: linkValue,
+            BG: headerBGValue
+        }
+    })
+}
+
 
 export const switchLanguage = (bolValue) => dispatch => {
 
@@ -99,4 +110,4 @@ export const switchLanguage = (bolValue) => dispatch => {
         type: 'SWITCH_LANGUAGE',
         value: bolValue
     })
-} 
+}

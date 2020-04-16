@@ -31,27 +31,35 @@
 }
 
 .btnLine {
-    margin: 0 200px;    
+    margin: 0 200px;
     display: flex;
     justify-content: space-evenly;
-}
+    }
 
-.startPage_div button {
-    width: 100px;
+.colorBtn {
+    width: 20%;
     height: 50px;
     border-style: none;
     border-radius: 5%;
     cursor: pointer;
+    margin: 0 5px;
+
 }
 
-.germanFlag {
-    background: url(/german.png);  
-    background-size: contain;  
+.colorBtn:nth-child(1) {
+    background-image: linear-gradient(90deg, white, black );
 }
 
-.englishFlag {
-    background: url(/english.png);  
-    background-size: contain;  
+.colorBtn:nth-child(2) {
+    background-image: linear-gradient(90deg, rgb(83, 80, 80), rgb(189, 14, 14), rgb(230, 185, 71) 100%);
+}
+
+.colorBtn:nth-child(3) {
+    background-image: linear-gradient(90deg, rgb(245, 245, 245), rgb(219, 48, 48),rgb(56, 219, 50), rgb(21, 62, 197),rgb(247, 217, 51));
+}
+
+.colorBtn:nth-child(4) {
+    background-image: linear-gradient(90deg, rgb(77, 229, 240), rgb(26, 178, 189), rgb(250, 141, 250), rgb(126, 42, 126));
 }
 
 @media (max-width:767px) {
@@ -77,10 +85,12 @@
     }
     
     .btnLine {
-        margin: 0;
+        margin: 0 auto;
+        text-align: center;
+        justify-content: space-evenly;
     }
 
-    .startPage_div button {
+    .colorBtn {
         width: 80px;
         height: 40px;
     }

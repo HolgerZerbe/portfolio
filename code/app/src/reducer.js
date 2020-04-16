@@ -1,5 +1,7 @@
 const initialState = {
-        german: true
+        german: true,
+        linkStyle : "linkColor1",
+        headerBG : "headerColor1"
 }
 
 const reducer = (state = initialState, action) => {
@@ -48,9 +50,14 @@ const reducer = (state = initialState, action) => {
             return {...state, 
                     german: action.value}
 
+        case 'SWITCH_STYLE': 
+            return {...state,
+                    linkStyle: action.value.link,            
+                    headerBG: action.value.BG}
         default: 
             return state;
     }
 }
+
 
 export default reducer;

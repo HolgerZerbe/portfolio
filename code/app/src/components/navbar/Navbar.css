@@ -8,8 +8,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(126, 231, 231);
-    color: black;
     min-width: 20%;
     height: 30px;
     text-align: center;
@@ -19,14 +17,105 @@
 }
 
 .linkNavbar:hover {
-    background-color: whitesmoke;
-    color: rgb(31, 126, 126);
-    border: 1px solid rgb(31, 126, 126)
+    text-decoration: underline;
+    font-weight: bolder;
 }
 
+.linkColor1 {
+    background-color : whitesmoke;
+    color: black
+}
 
-@media only screen and (max-width:767px){
+.linkColor1:hover {
+    background-color: rgb(148, 144, 144); 
+    color: whitesmoke; 
+    box-shadow: black 3px 3px 2px;
+}
+
+.linkColor2 {
+    background-color : rgb(230, 185, 71);
+    color: black
+}
+
+.linkColor2:hover {
+    background-color: rgb(83, 80, 80); 
+    color: rgb(230, 185, 71); 
+    box-shadow: rgb(230, 185, 71) 3px 3px 2px;
+}
+
+.linkColor3 {
+    text-shadow: 2px 2px 2px white;
+}
+
+.linkColor3:hover {
+    text-shadow: 2px 2px 2px gray;
+}
+
+.linkColor3:nth-child(1) {
+    background-color : rgb(219, 48, 48);
+    color: black;
+}
+
+.linkColor3:nth-child(1):hover {
+    background-color: whitesmoke; 
+    border: 1px solid black;
+    color:rgb(219, 48, 48); 
+    box-shadow: rgb(219, 48, 48) 3px 3px 2px;
+}
+
+.linkColor3:nth-child(2) {
+    background-color : rgb(56, 219, 50);
+    color: black;
+}
+
+.linkColor3:nth-child(2):hover {
+    background-color: whitesmoke; 
+    border: 1px solid black;
+    color:rgb(56, 219, 50); 
+    box-shadow: rgb(56, 219, 50) 3px 3px 2px;
+}
+.linkColor3:nth-child(3) {
+    background-color : rgb(21, 62, 197);
+    color: black;
+}
+
+.linkColor3:nth-child(3):hover {
+    background-color: white;  
+    border: 1px solid black;
+    color:rgb(21, 62, 197); 
+    box-shadow: rgb(21, 62, 197) 3px 3px 2px;
+}
+.linkColor3:nth-child(4) {
+    background-color : rgb(247, 217, 51);
+    color: black;
+}
+
+.linkColor3:nth-child(4):hover {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black; 
+    color:rgb(247, 217, 51); 
+    box-shadow: rgb(247, 217, 51) 3px 3px 2px;
+}
+
+.linkColor4 {
+    background-color : rgb(77, 229, 240);
+    color: black
+}
+
+.linkColor4:hover {
+    background-color: whitesmoke; 
+    color:rgb(26, 178, 189); 
+    box-shadow: rgb(26, 178, 189) 3px 3px 2px;
+}
+
+@media only screen and (min-width: 375px)and (max-width:767px){
     .linkNavbar {
     font-size: 0.8em;
+    }
+}
+
+@media only screen and (max-width: 374px){
+    .linkNavbar {
+    font-size: 0.7em;
     }
 }

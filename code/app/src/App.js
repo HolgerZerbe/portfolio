@@ -15,17 +15,23 @@ import config from "./config.json";
 
 
 class App extends Component {
+  state = { headerColor : "header " + this.props.headerBG};
 
-
+  static getDerivedStateFromProps(nextProps, prevState){
+    if(nextProps.headerBG!==prevState.headerBG){
+      return { headerColor: "header " + nextProps.headerBG};
+   }
+   else return null;
+ }
   render (){
 
     return (
       <Router> 
         <div className="mainApp">
 
-          <div className="header">
+          <div className={this.state.headerColor}>
             <div className="headlineBtn">
-              <h1 className="headline">Holger Zerbe Portfolio</h1>
+              <h1 className="headline">&lt;Holger_Zerbe /&gt;</h1>
               <div className="languageBtn"><button className="germanFlag" onClick={()=>this.props.switchLanguage(true)}></button><button className="englishFlag" onClick={()=>this.props.switchLanguage(false)}></button></div>
             </div>
             <Navbar />
@@ -47,6 +53,7 @@ class App extends Component {
 }
 
 const mapStateToProps = (state) => ({
-        german:state.german
+        german:state.german,
+        headerBG: state.headerBG
 })
 export default connect(mapStateToProps, {switchLanguage})(App);

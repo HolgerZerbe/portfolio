@@ -8,6 +8,7 @@ class Impressum extends Component {
         <>
         <div className="impressum_div">
         {this.props.german ? <>Hallo von impressum.js</> :<>Hello from impressum.js</>}
+        
         </ div>
         </>
         )

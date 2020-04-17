@@ -92,13 +92,14 @@ import config from "./config.json";
 //     })
 // }
 
-export const switchStyle = (linkValue, headerBGValue) => dispatch => {
+export const switchStyle = (linkValue, headerBGValue, navbarBGValue) => dispatch => {
 
     dispatch({
         type: 'SWITCH_STYLE',
         value: {
             link: linkValue,
-            BG: headerBGValue
+            BG: headerBGValue,
+            navBG : navbarBGValue
         }
     })
 }

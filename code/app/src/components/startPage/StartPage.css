@@ -22,8 +22,9 @@
     background-color: lightgrey;
     width: 200px;
     height: 200px;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 50%;
+    box-shadow: rgb(83, 80, 80) 5px 5px 3px;
 }
 
 .languageHeadline {

@@ -15,11 +15,11 @@ import config from "./config.json";
 
 
 class App extends Component {
-  state = { headerColor : "header " + this.props.headerBG};
+  state = { headerColor : "header " + this.props.headerStyle};
 
   static getDerivedStateFromProps(nextProps, prevState){
-    if(nextProps.headerBG!==prevState.headerBG){
-      return { headerColor: "header " + nextProps.headerBG};
+    if(nextProps.headerStyle!==prevState.headerStyle){
+      return { headerColor: "header " + nextProps.headerStyle};
    }
    else return null;
  }
@@ -54,6 +54,6 @@ class App extends Component {
 
 const mapStateToProps = (state) => ({
         german:state.german,
-        headerBG: state.headerBG
+        headerStyle: state.headerStyle
 })
 export default connect(mapStateToProps, {switchLanguage})(App);

@@ -7,18 +7,21 @@ import {Link} from 'react-router-dom';
 
 class Navbar extends Component {
 
-    state = {linkClass : "linkNavbar " + this.props.linkStyle};
+    state = {linkClass : "linkNavbar " + this.props.linkStyle,
+             navbarClass: "navbar " + this.props.navbarStyle  
+}
 
     static getDerivedStateFromProps(nextProps, prevState){
-        if(nextProps.linkStyle!==prevState.linkStyle){
-          return { linkClass: "linkNavbar " + nextProps.linkStyle};
+        if(nextProps!==prevState){
+          return { linkClass: "linkNavbar " + nextProps.linkStyle,
+                     navbarClass: "navbar " + nextProps.navbarStyle};
        }
        else return null;
      }
 
     render() {
         return (
-            <div className="navbar">
+            <div className = {this.state.navbarClass}>
 
                 <Link className={this.state.linkClass} to="/">{this.props.german ? <>Start</> : <>Home</>}</Link>
                 <Link className={this.state.linkClass} to="/about">{this.props.german ? <>Über mich</> : <>About me</>}</Link>
@@ -31,6 +34,7 @@ class Navbar extends Component {
 }
 const mapStateToProps = (state) => ({
     german: state.german,
-    linkStyle: state.linkStyle
+    linkStyle: state.linkStyle,
+    navbarStyle: state.navbarStyle
 })
 export default connect(mapStateToProps, null)(Navbar);

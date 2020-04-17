@@ -2,6 +2,13 @@
     display: flex;
     justify-content: space-evenly;
 }
+.navBg2 {
+    background-color:rgb(230, 185, 72); 
+}
+
+.navBgTrans {
+    background-color:transparent; 
+}
 
 .linkNavbar {
     box-sizing: border-box;
@@ -13,7 +20,6 @@
     text-align: center;
     text-decoration: none;
     padding: 5px;
-    border-radius: 5%;
 }
 
 .linkNavbar:hover {
@@ -23,7 +29,8 @@
 
 .linkColor1 {
     background-color : whitesmoke;
-    color: black
+    color: black;
+    border-bottom: 1px solid black;
 }
 
 .linkColor1:hover {
@@ -34,17 +41,18 @@
 
 .linkColor2 {
     background-color : rgb(230, 185, 71);
-    color: black
+    color: black;
 }
 
 .linkColor2:hover {
     background-color: rgb(83, 80, 80); 
     color: rgb(230, 185, 71); 
-    box-shadow: rgb(230, 185, 71) 3px 3px 2px;
+    /* box-shadow: rgb(230, 185, 71) 3px 3px 2px; */
 }
 
 .linkColor3 {
     text-shadow: 2px 2px 2px white;
+    border-radius: 10px;
 }
 
 .linkColor3:hover {
@@ -60,7 +68,7 @@
     background-color: whitesmoke; 
     border: 1px solid black;
     color:rgb(219, 48, 48); 
-    box-shadow: rgb(219, 48, 48) 3px 3px 2px;
+    /* box-shadow: rgb(219, 48, 48) 3px 3px 2px; */
 }
 
 .linkColor3:nth-child(2) {
@@ -72,8 +80,9 @@
     background-color: whitesmoke; 
     border: 1px solid black;
     color:rgb(56, 219, 50); 
-    box-shadow: rgb(56, 219, 50) 3px 3px 2px;
+    /* box-shadow: rgb(56, 219, 50) 3px 3px 2px; */
 }
+
 .linkColor3:nth-child(3) {
     background-color : rgb(21, 62, 197);
     color: black;
@@ -83,7 +92,7 @@
     background-color: white;  
     border: 1px solid black;
     color:rgb(21, 62, 197); 
-    box-shadow: rgb(21, 62, 197) 3px 3px 2px;
+    /* box-shadow: rgb(21, 62, 197) 3px 3px 2px; */
 }
 .linkColor3:nth-child(4) {
     background-color : rgb(247, 217, 51);
@@ -94,12 +103,13 @@
     background-color: rgb(255, 255, 255);
     border: 1px solid black; 
     color:rgb(247, 217, 51); 
-    box-shadow: rgb(247, 217, 51) 3px 3px 2px;
+    /* box-shadow: rgb(247, 217, 51) 3px 3px 2px; */
 }
 
 .linkColor4 {
     background-color : rgb(77, 229, 240);
-    color: black
+    color: black;
+    border-radius: 10px 10px 0 0;
 }
 
 .linkColor4:hover {

@@ -47,8 +47,6 @@ html body {
   rgb(21, 62, 197),rgb(247, 217, 51), rgb(247, 217, 51));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
-
 }
 
 .headerColor4 {
@@ -65,7 +63,6 @@ html body {
   margin-top: 15px;
   margin-right: 4%;
   padding: 10px 0;
-
 }
 
 .headline {
@@ -78,6 +75,9 @@ html body {
   box-sizing: border-box;
   width: 100%;
   min-height: 80%;
+  background-image: url(/home-office-599475_1920.jpg);
+  /* background-image: url(/home-office-336373_1920.jpg); */
+  background-size: cover;
 }
 
 .languageBtn {

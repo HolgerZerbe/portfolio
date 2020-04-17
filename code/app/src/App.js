@@ -11,7 +11,7 @@ import Impressum from './components/impressum/Impressum';
 import NotFound from './components/notFound/NotFound';
 
 import {switchLanguage} from './actions'
-import config from "./config.json";
+// import config from "./config.json";
 
 
 class App extends Component {

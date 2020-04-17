@@ -23,8 +23,12 @@ class App extends Component {
    }
    else return null;
  }
-  render (){
 
+  componentDidMount(){
+    {(JSON.parse(localStorage.getItem("german"))) ? this.props.switchLanguage(true) : this.props.switchLanguage(false)}
+  }
+  render (){
+    
     return (
       <Router> 
         <div className="mainApp">
@@ -32,7 +36,7 @@ class App extends Component {
           <div className={this.state.headerColor}>
             <div className="headlineBtn">
               <h1 className="headline">&lt;Holger_Zerbe /&gt;</h1>
-              <div className="languageBtn"><button className="germanFlag" onClick={()=>this.props.switchLanguage(true)}></button><button className="englishFlag" onClick={()=>this.props.switchLanguage(false)}></button></div>
+              <div className="languageBtn"><button className="germanFlag" onClick={()=>{localStorage.setItem("german", "true"); this.props.switchLanguage(true)}}></button><button className="englishFlag" onClick={()=>{localStorage.setItem("german", "false"); this.props.switchLanguage(false)}}></button></div>  
             </div>
             <Navbar />
           </div>

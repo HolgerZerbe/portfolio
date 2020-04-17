@@ -38,3 +38,4 @@ const mapStateToProps = (state) => ({
     navbarStyle: state.navbarStyle
 })
 export default connect(mapStateToProps, null)(Navbar);
+

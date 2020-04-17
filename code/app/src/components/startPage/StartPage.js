@@ -18,10 +18,7 @@ class StartPage extends Component {
                     <button className ="colorBtn" onClick={()=>{this.props.switchStyle("linkColor3", "headerColor3", "navBgTrans")}}>{this.props.german ? <>Stil 3</> : <>style 3</>}</button>
                     <button className ="colorBtn" onClick={()=>{this.props.switchStyle("linkColor4", "headerColor4", "navBgTrans")}}>{this.props.german ? <>Stil 4</> : <>style 4</>}</button>
                     </div>
-
-
             </div>
-
         )
     }   
 }
@@ -32,3 +29,4 @@ const mapStateToProps = (state) => ({
 export default connect(mapStateToProps, {switchStyle})(StartPage);
 
 
+// linkValue, headerBGValue, navbarBGValue

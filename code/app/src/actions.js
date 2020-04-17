@@ -1,4 +1,4 @@
-import config from "./config.json";
+// import config from "./config.json";
 
 
 
@@ -72,24 +72,6 @@ import config from "./config.json";
 //         })
 
 //     }
-// }
-
-// export const sendAwayToCalculate = (product) => async dispatch => {
-
-//     dispatch({
-//         type: 'SEND_AWAY_TO_CALCULATE',
-//         value: product
-//     })
-// }
-
-
-
-// export const setProductFoundToFalse = () => async dispatch =>{
-
-//     dispatch({
-//         type: 'SET_PRODUCTFOUND_TO_FALSE',
-//         value: false
-//     })
 // }
 
 export const switchStyle = (linkValue, headerBGValue, navbarBGValue) => dispatch => {

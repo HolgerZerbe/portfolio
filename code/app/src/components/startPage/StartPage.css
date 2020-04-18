@@ -1,6 +1,7 @@
 .startPage_div {
     width: 100%;
-    color: black;
+    color: rgb(252, 229, 162);
+    text-shadow: black 3px 3px 3px;
 }
 
 .photo {
@@ -10,10 +11,11 @@
 .welcome {
     text-align: left;
     margin-left: 20px;
+    padding-top: 10px;
 }
 
 .homepage{
-    text-align: right;
+    text-align: right; 
     margin-right: 20px;
     margin-bottom: 35px;
 }
@@ -22,17 +24,17 @@
     background-color: lightgrey;
     width: 200px;
     height: 200px;
-    border: 2px solid black;
+    border: 3px solid rgb(252, 229, 162);
     border-radius: 50%;
-    box-shadow: rgb(83, 80, 80) 5px 5px 3px;
 }
 
-.languageHeadline {
+.styleHeadline {
     text-align: center;
 }
 
 .btnLine {
     margin: 0 200px;
+    padding-bottom: 20px    ;
     display: flex;
     justify-content: space-evenly;
     }

@@ -6,12 +6,7 @@ import {switchStyle} from '../../actions';
 
 class StartPage extends Component {
 
-    componentDidMount(){
-        let styleArr = JSON.parse(localStorage.getItem("style"))
-        if (styleArr.length===3) {
-            this.props.switchStyle(styleArr[0], styleArr[1], styleArr[2])
-        }
-      }
+
 
     render() {
         return (
@@ -19,7 +14,7 @@ class StartPage extends Component {
                 <h2 className="welcome">Willkommen, Bienvenue, Welcome!</h2>
                 <div className="photo"><img className = "photoStartPage" src="holger.png" alt="Holger Zerbe"></img></div>
                 <h2 className="homepage">{this.props.german ? <>auf meiner Portfolio-Seite</> : <>to my portfolio site</>}</h2>
-        <h3 className="languageHeadline">{this.props.german ? <>Bitte wähle einen Stil</> : <> Please choose your favorite style</>}</h3>
+        <h3 className="styleHeadline">{this.props.german ? <>Bitte wähle einen Stil</> : <> Please choose your favorite style</>}</h3>
                 <div className="btnLine">
                     <button className ="colorBtn" onClick={()=>{{localStorage.setItem("style", JSON.stringify(["linkColor1", "headerColor1", "navBgTrans"]));this.props.switchStyle("linkColor1", "headerColor1", "navBgTrans")}}}>{this.props.german ? <>Stil 1</> : <>style 1</>}</button>
                     <button className ="colorBtn" onClick={()=>{{localStorage.setItem("style", JSON.stringify(["linkColor2", "headerColor2", "navBg2"]));this.props.switchStyle("linkColor2", "headerColor2", "navBg2")}}}>{this.props.german ? <>Stil 2</> : <>style 2</>}</button>

@@ -11,6 +11,8 @@ import Impressum from './components/impressum/Impressum';
 import NotFound from './components/notFound/NotFound';
 
 import {switchLanguage} from './actions'
+import {switchStyle} from './actions'
+
 // import config from "./config.json";
 
 
@@ -26,6 +28,11 @@ class App extends Component {
 
   componentDidMount(){
     {(JSON.parse(localStorage.getItem("german"))) ? this.props.switchLanguage(true) : this.props.switchLanguage(false)}
+
+    let styleArr = JSON.parse(localStorage.getItem("style"))
+    if (styleArr.length===3) {
+        this.props.switchStyle(styleArr[0], styleArr[1], styleArr[2])
+    }
   }
   render (){
     
@@ -60,4 +67,5 @@ const mapStateToProps = (state) => ({
         german:state.german,
         headerStyle: state.headerStyle
 })
-export default connect(mapStateToProps, {switchLanguage})(App);
+export default connect(mapStateToProps, {switchLanguage, switchStyle
+})(App);

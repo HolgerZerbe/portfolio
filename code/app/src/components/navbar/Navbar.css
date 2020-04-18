@@ -22,21 +22,23 @@
     padding: 5px;
 }
 
-.linkNavbar:hover {
+/* .linkNavbar:hover {
     text-decoration: underline;
     font-weight: bolder;
-}
+} */
 
 .linkColor1 {
     background-color : whitesmoke;
     color: black;
     border-bottom: 1px solid black;
+    transition: font-size 1s;
 }
 
 .linkColor1:hover {
-    background-color: rgb(148, 144, 144); 
-    color: whitesmoke; 
-    box-shadow: black 3px 3px 2px;
+    /* background-color: rgb(148, 144, 144);  */
+    /* color: whitesmoke;  */
+    /* box-shadow: black 3px 3px 2px; */
+    font-size: 1.5em;
 }
 
 .linkColor2 {
@@ -47,6 +49,8 @@
 .linkColor2:hover {
     background-color: rgb(83, 80, 80); 
     color: rgb(230, 185, 71); 
+    text-decoration: underline;
+    font-weight: bolder;
     /* box-shadow: rgb(230, 185, 71) 3px 3px 2px; */
 }
 
@@ -57,6 +61,8 @@
 
 .linkColor3:hover {
     text-shadow: 2px 2px 2px gray;
+    text-decoration: underline;
+    font-weight: bolder;
 }
 
 .linkColor3:nth-child(1) {
@@ -67,7 +73,7 @@
 .linkColor3:nth-child(1):hover {
     background-color: whitesmoke; 
     border: 1px solid black;
-    color:rgb(219, 48, 48); 
+    color:rgb(219, 48, 48);
     /* box-shadow: rgb(219, 48, 48) 3px 3px 2px; */
 }
 
@@ -109,23 +115,33 @@
 .linkColor4 {
     background-color : rgb(77, 229, 240);
     color: black;
-    border-radius: 10px 10px 0 0;
+    border-radius: 20px 20px 0 0;
+    transition: border-radius 1s, background-color 1s, color 1s;
 }
 
 .linkColor4:hover {
     background-color: whitesmoke; 
     color:rgb(26, 178, 189); 
     box-shadow: rgb(26, 178, 189) 3px 3px 2px;
+    border-radius: 0 0 20px 20px;
+    text-decoration: underline;
+    font-weight: bolder;
 }
 
 @media only screen and (min-width: 375px)and (max-width:767px){
     .linkNavbar {
-    font-size: 0.8em;
+         font-size: 0.8em;
+    }
+    .linkColor1:hover {
+        font-size: 0.9em;
     }
 }
 
 @media only screen and (max-width: 374px){
     .linkNavbar {
-    font-size: 0.7em;
+        font-size: 0.7em;
+    }
+    .linkColor1:hover {
+        font-size: 0.8em;
     }
 }

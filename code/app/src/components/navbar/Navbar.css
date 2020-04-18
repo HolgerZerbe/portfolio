@@ -116,7 +116,8 @@
     background-color : rgb(77, 229, 240);
     color: black;
     border-radius: 20px 20px 0 0;
-    transition: border-radius 1s, background-color 1s, color 1s;
+    box-shadow: whitesmoke -3px -3px 2px;
+    transition: border-radius 1s, background-color 1s, color 1s, box-shadow 1s;
 }
 
 .linkColor4:hover {

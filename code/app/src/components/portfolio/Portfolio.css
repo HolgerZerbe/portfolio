@@ -1,8 +1,12 @@
 .portfolio_div{
-    color: blue;
+    padding-top: 50px;
+
 }
 
 
 @media only screen and (max-width: 767px) {
-
+    
+    .carousel {
+        width: 50%
+    }
 }

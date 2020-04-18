@@ -9,6 +9,9 @@ import About from './components/about/About';
 import Portfolio from './components/portfolio/Portfolio';
 import Impressum from './components/impressum/Impressum';
 import NotFound from './components/notFound/NotFound';
+import Moods from './components/moods/Moods';
+import Tictactoe from './components/tictactoe/Tictactoe';
+import Tutoring from './components/tutoring/Tutoring';
 
 import {switchLanguage} from './actions'
 import {switchStyle} from './actions'
@@ -54,6 +57,13 @@ class App extends Component {
                 <Route exact path="/about" component={About} />
                 <Route exact path="/portfolio" component={Portfolio} />
                 <Route exact path="/impressum" component={Impressum} />
+                <Route exact path="/moods" component={Moods} />
+                <Route exact path="/tictactoe" component={Tictactoe} />
+                <Route exact path="/tutoring" component={Tutoring} />
+                <Route exact path='/foodata' component={() => { 
+     window.location.href = 'https://foodata.info'; 
+     return null;
+}}/>
                 <Route component={NotFound} />
             </Switch>
 

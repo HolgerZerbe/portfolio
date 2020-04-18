@@ -29,8 +29,9 @@ class App extends Component {
   componentDidMount(){
     {(JSON.parse(localStorage.getItem("german"))) ? this.props.switchLanguage(true) : this.props.switchLanguage(false)}
 
-    let styleArr = JSON.parse(localStorage.getItem("style"))
-    if (styleArr.length===3) {
+    if (JSON.parse(localStorage.getItem("style"))
+    ) {
+        let styleArr = JSON.parse(localStorage.getItem("style"))
         this.props.switchStyle(styleArr[0], styleArr[1], styleArr[2])
     }
   }

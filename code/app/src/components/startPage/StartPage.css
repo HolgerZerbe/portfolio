@@ -1,5 +1,6 @@
 .startPage_div {
     width: 100%;
+    position: relative;
     color: rgb(252, 229, 162);
     text-shadow: black 3px 3px 3px;
 }
@@ -10,17 +11,18 @@
 
 .welcome {
     text-align: left;
-    margin-left: 20px;
+    margin: 0 0 0 20px;
     padding-top: 10px;
 }
 
-.homepage{
-    text-align: right; 
+.homepage {
+    text-align: right;
     margin-right: 20px;
     margin-bottom: 35px;
 }
 
 .photoStartPage {
+    margin-top: 20px;
     background-color: lightgrey;
     width: 200px;
     height: 200px;
@@ -30,14 +32,18 @@
 
 .styleHeadline {
     text-align: center;
+    position: relative;
+    bottom: -65px;
 }
 
 .btnLine {
+    position: relative;
+    bottom: -65px;
     margin: 0 200px;
-    padding-bottom: 20px    ;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-evenly;
-    }
+}
 
 .colorBtn {
     width: 20%;
@@ -50,7 +56,7 @@
 }
 
 .colorBtn:nth-child(1) {
-    background-image: linear-gradient(90deg, white, black );
+    background-image: linear-gradient(90deg, white, black);
 }
 
 .colorBtn:nth-child(2) {
@@ -58,36 +64,41 @@
 }
 
 .colorBtn:nth-child(3) {
-    background-image: linear-gradient(90deg, rgb(245, 245, 245), rgb(219, 48, 48),rgb(56, 219, 50), rgb(21, 62, 197),rgb(247, 217, 51));
+    background-image: linear-gradient(90deg, rgb(245, 245, 245), rgb(219, 48, 48), rgb(56, 219, 50), rgb(21, 62, 197), rgb(247, 217, 51));
 }
 
 .colorBtn:nth-child(4) {
     background-image: linear-gradient(90deg, rgb(77, 229, 240), rgb(26, 178, 189), rgb(250, 141, 250), rgb(126, 42, 126));
 }
 
-@media (max-width:767px) {
-    
+@media only screen and (max-width:767px) {
+
     .startPage_div h2 {
         font-size: 1.1em;
     }
-    
+
     .photoStartPage {
         width: 150px;
         height: 150px;
     }
+
     .languageHeadline {
         font-size: 0.8em;
     }
+
     .homepage {
         text-align: center;
         margin-right: 0;
     }
+
     .welcome {
         text-align: center;
         margin-left: 0;
     }
-    
+
     .btnLine {
+        position: relative;
+        bottom: -65px;
         margin: 0 auto;
         text-align: center;
         justify-content: space-evenly;

@@ -6,13 +6,11 @@ import {switchStyle} from '../../actions';
 
 class StartPage extends Component {
 
-
-
     render() {
         return (
             <div className="startPage_div">
                 <h2 className="welcome">Willkommen, Bienvenue, Welcome!</h2>
-                <div className="photo"><img className = "photoStartPage" src="holger.png" alt="Holger Zerbe"></img></div>
+                <div className="photo"><img className = "photoStartPage" src="/image/holger.png" alt="Holger Zerbe"></img></div>
                 <h2 className="homepage">{this.props.german ? <>auf meiner Portfolio-Seite</> : <>to my portfolio site</>}</h2>
         <h3 className="styleHeadline">{this.props.german ? <>Bitte wähle einen Stil</> : <> Please choose your favorite style</>}</h3>
                 <div className="btnLine">

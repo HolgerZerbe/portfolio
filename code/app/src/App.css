@@ -74,10 +74,11 @@ html body {
 .changingAreaApp {
   box-sizing: border-box;
   width: 100%;
-  height: calc(100% - 120px);
+  min-height: calc(100% - 120px);
   background-image: url(/image/home-office-599475_1920.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: rgb(81, 83, 83);
 }
 
 .languageBtn {
@@ -128,7 +129,7 @@ html body {
   }
 
   .changingAreaApp {
-    height: calc(100% - 90px);
+    min-height: calc(100% - 90px);
   }
 }
 
@@ -143,7 +144,7 @@ html body {
   }
 
   .changingAreaApp {
-    height: calc(100% - 90px);
+    min-height: calc(100% - 90px);
   }
 }
 

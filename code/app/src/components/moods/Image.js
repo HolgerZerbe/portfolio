@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './App.css';
+import './Moods.css';
 import Square from './Square'
 
 class Image extends Component {
@@ -37,7 +37,7 @@ class Image extends Component {
   
   render (){
     return (
-      <div className="image">
+      <div className="golden_image">
         {this.state.backcolor.map((element, index) => <Square key={index} color={element} opac={this.state.opacity[index]} />)}
       </div>
     );

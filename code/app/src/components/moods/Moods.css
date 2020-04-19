@@ -1,3 +1,121 @@
 .moods_div {
-    color: lightpink;
+    padding: 13px 20px;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: rgb(81, 83, 83);
+    color: whitesmoke;
+    margin: 0 auto;
+
+}
+
+.moods_div h1 {
+    color: gold;
+    text-align: center;
+    margin: 0 auto 5px auto;
+    font-size: 1.2em;
+}
+
+.inner_moods {
+    display: flex;
+    justify-content: space-around;
+}
+
+.golden_image {
+    width: 480px;
+    height: 480px;
+    border: 5px solid white;
+    margin: 0 auto;
+    background-image: url(/image/goldene-entspannung.jpg);
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.square {
+    width: 80px;
+    height: 80px;
+    transition: background-color 1s, opacity 1s;
+}
+
+.art,
+.code {
+    font-size: 0.8em;
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.art h3,
+.code h3 {
+    margin-top: 0px;
+}
+
+.art h4,
+.code h4 {
+    margin-top: 20px;
+}
+
+.art a,
+.code a {
+    text-decoration: none;
+    color: gold;
+}
+
+@media screen and (min-width: 500px) and (max-width: 1020px) {
+    .moods_div {
+        padding:10px 0;
+    }
+ 
+    .inner_moods {
+        flex-direction: column;
+    }
+    
+    .golden_image {
+        order: 1;
+        margin: 0 auto;
+    }
+    .art {
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+    .code {
+        order: 3;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    .moods_div {
+        padding:10px 0;
+    }
+ 
+    .inner_moods {
+        flex-direction: column;
+    }
+    
+    .golden_image {
+        order: 1;
+        margin: 0 auto;
+    }
+    .art {
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+    .code {
+        order: 3;
+        width: 100%;
+        text-align: center;
+    }
+    .golden_image {
+        width: 300px;
+        height: 300px;
+    }
+    .square {
+        width: 50px;
+        height: 50px;
+    }
 }

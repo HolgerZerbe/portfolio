@@ -1,3 +1,26 @@
 .impressum_div {
-    color: red
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.impressum_div h4 {
+    margin: 0;
+}
+
+.inner_impressum {
+    min-height: 100%;
+    background-color: rgba(245, 245, 245, 0.5);
+    padding: 10px;
+}
+
+.inner_impressum h6 {
+    margin: 3px 0;
+}
+
+.inner_impressum p {
+    margin: 0;
+    padding: 0;
+    font-size: 0.7em;
+    line-height: 1em;
 }

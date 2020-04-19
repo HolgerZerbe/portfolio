@@ -24,9 +24,9 @@ class Navbar extends Component {
             <div className = {this.state.navbarClass}>
 
                 <Link className={this.state.linkClass} to="/">{this.props.german ? <>Start</> : <>Home</>}</Link>
-                <Link className={this.state.linkClass} to="/about">{this.props.german ? <>Über mich</> : <>About me</>}</Link>
-                <Link className={this.state.linkClass} to="/portfolio">{this.props.german ? <>Mein Portfolio</> : <>My portfolio</>}</Link>
-                <Link className={this.state.linkClass} to="/impressum">{this.props.german ? <>Impressum</> : <>Imprint</>}</Link>
+                <Link className={this.state.linkClass} to="/about">{this.props.german ? <>Über mich</> : <>About Me</>}</Link>
+                <Link className={this.state.linkClass} to="/portfolio">{this.props.german ? <>Mein Portfolio</> : <>My Portfolio</>}</Link>
+                <Link className={this.state.linkClass} to="/impressum">{this.props.german ? <>Impressum</> : <>Legal Notice</>}</Link>
 
             </div>
         )

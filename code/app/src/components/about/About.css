@@ -1,5 +1,25 @@
 .about_div {
-    color: green;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.about_div h2 {
+  margin: 0;
+}
+
+.inner_about {
+  min-height: 100%;
+  background-color: rgba(245, 245, 245, 0.5);
+}
+
+.resumeLink {
+  font-size: 1.2em;
+  color: whitesmoke;
+  background-color: rgb(39, 42, 44);
+  text-decoration: none;
+  padding: 10px 20px;
+  display: inline-block;
 }
 
 @media only screen and (max-width: 767px) {

@@ -8,10 +8,11 @@ import {Link} from 'react-router-dom';
     render() {
         return (
             <div className="about_div">
-               {this.props.german ? <>Hallo von about.js</> : <>Hello from about.js</>} 
-           
-               <Link to="/pdfFiles/Holger_Zerbe_CV_english.pdf" target="_blank" download>Resume</Link>
-
+                <div className="inner_about">
+               {this.props.german ? <h2>Hallo von about.js</h2> : <h2>Hello from about.js</h2>} 
+        
+               {this.props.german ? <Link className="resumeLink" to="/cvsPDF/Holger_Zerbe_Lebenslauf.pdf" target="_blank" download>Lebenslauf</Link> : <Link className="resumeLink"to="/cvsPDF/Holger_Zerbe_CV_english.pdf" target="_blank" download>Resume</Link>}
+                </div>
             </div>
         )
     }

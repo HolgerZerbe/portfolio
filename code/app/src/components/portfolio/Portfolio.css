@@ -1,6 +1,18 @@
 .portfolio_div{
-    padding-top: 50px;
+    
+}
 
+.chooseProject {
+    margin: 0;
+    text-align: center;
+    padding: 15px;
+    color: rgb(252, 229, 162);
+    text-shadow: black 3px 3px 3px;
+}
+
+.projectTitle {
+    font-weight: bolder;
+    text-shadow: black 3px 3px 3px;
 }
 
 
@@ -10,3 +22,4 @@
         width: 50%
     }
 }
+

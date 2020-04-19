@@ -1,3 +1,92 @@
 .tutoring_div {
-    color: purple;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.inner_tutoring {
+    box-sizing: border-box;
+    margin: 0 auto;
+    min-height: 100%;
+    background-color: rgba(245, 245, 245, 0.5);
+}
+
+.inner_tutoring h3 {
+    margin: 0;
+    color: rgb(252, 229, 162);
+    text-shadow: black 3px 3px 3px;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.sorryP {
+    box-sizing: border-box;
+    min-height: 35px;
+    margin: 0;
+    color: rgb(252, 229, 162);
+    text-shadow: black 3px 3px 3px;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.inner_tutoring hr {
+    margin: 0 20px;
+    color: rgb(252, 229, 162);
+    text-shadow: black 3px 3px 3px;
+}
+.inner_tutoring ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+.tutoringLink {
+    display: inline-flex;
+    font-size: 0.9em;
+    color: rgb(252, 229, 162);
+    background-color: rgb(39, 42, 44);
+    text-decoration: none;
+    padding: 5px 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+@media screen and (min-width: 375px) and (max-width: 767px) {
+    .inner_tutoring h3 {
+        padding-top: 15px;
+        font-size: 0.9em;
+    }
+    
+    .sorryP {
+        min-height: 20px;
+        font-size: 0.8em;
+    }
+
+    .tutoringLink {
+        font-size: 0.7em;
+        padding: 2px 8px;
+        margin-top: 1px;
+        margin-left: 3px;
+    }
+}
+
+@media screen and (max-width: 374px) {
+    .inner_tutoring h3 {
+        padding-top: 15px;
+        font-size: 0.8em;
+    }
+    
+    .sorryP {
+        min-height: 20px;
+        font-size: 0.7em;
+    }
+
+    .tutoringLink {
+        font-size: 0.5em;
+        padding: 2px 4px;
+        margin-top: 0;
+        margin-left: 2px;
+    }
 }

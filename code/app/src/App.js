@@ -16,11 +16,13 @@ import Tutoring from './components/tutoring/Tutoring';
 import {switchLanguage} from './actions'
 import {switchStyle} from './actions'
 
-// import config from "./config.json";
-
-
 class App extends Component {
   state = { headerColor : "header " + this.props.headerStyle};
+
+  changelanguage = (trueFalse) => {
+    localStorage.setItem("german", JSON.stringify(trueFalse));
+    this.props.switchLanguage(trueFalse);
+  }
 
   static getDerivedStateFromProps(nextProps, prevState){
     if(nextProps.headerStyle!==prevState.headerStyle){
@@ -31,7 +33,7 @@ class App extends Component {
 
   componentDidMount(){
     
-    if (JSON.parse(localStorage.getItem("german"))) {
+    if (localStorage.getItem("german")) {
       {JSON.parse(localStorage.getItem("german")) ? this.props.switchLanguage(true) : this.props.switchLanguage(false)}}
 
     if (JSON.parse(localStorage.getItem("style"))
@@ -40,6 +42,8 @@ class App extends Component {
         this.props.switchStyle(styleArr[0], styleArr[1], styleArr[2])
     }
   }
+
+
   render (){
     
     return (
@@ -49,7 +53,7 @@ class App extends Component {
           <div className={this.state.headerColor}>
             <div className="headlineBtn">
               <h1 className="headline">&lt;Holger_Zerbe /&gt;</h1>
-              <div className="languageBtn"><button className="germanFlag" onClick={()=>{localStorage.setItem("german", "true"); this.props.switchLanguage(true)}}></button><button className="englishFlag" onClick={()=>{localStorage.setItem("german", "false"); this.props.switchLanguage(false)}}></button></div>  
+              <div className="languageBtn"><button className="germanFlag" onClick={()=>{this.changelanguage(true)}}></button><button className="englishFlag" onClick={()=>{this.changelanguage(false)}}></button></div>  
             </div>
             <Navbar />
           </div>

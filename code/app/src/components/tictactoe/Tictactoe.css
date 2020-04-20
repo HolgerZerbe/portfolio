@@ -1,3 +1,199 @@
-.tictactoe_div {
-    color: lightgreen;
+.tictactoe_div   {
+    width: 100vw;
+    box-sizing: border-box;
+    padding: 10px;
+    background: rgb(197, 201, 204);
+    min-height: 100vh;
+}
+
+.tictactoe_div h2 {
+    box-sizing: border-box;
+    text-align: center;
+    margin: 15px 0 20px 0;
+    text-shadow: -3px -3px 5px red;
+
+}
+
+.reduxInHeadline {
+    color: gold;
+    text-shadow: 3px 3px 5px red;
+}
+
+.main {
+    box-sizing: border-box;
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.board {
+    width: 50%;
+    min-width: 460px;
+    max-height: 460px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    color: black;
+    width: 150px;
+    min-width: 30%;
+    height: 150px;
+    border-right: 5px solid olive;
+    border-bottom: 5px solid olive;
+    line-height: 150px;
+    font-size: 100px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cell:nth-child(3n +3) {
+    border-right: none;
+}
+
+.cell:nth-child(1n +7) {
+    border-bottom: none;
+}
+
+.cell:first-child {
+    border-radius: 20px 0 0 0;
+}
+
+.cell:nth-child(3n) {
+    border-radius: 0 20px 0 0;
+}
+
+.cell:nth-child(6n) {
+    border-radius: 0;
+}
+
+.cell:nth-child(7) {
+    border-radius: 0 0 0 20px;
+}
+
+.cell:nth-child(9) {
+    border-radius: 0 0 20px 0;
+}
+
+.info {
+    width: 30%;
+}
+
+.resetBtn {
+    font-size: 20px;
+    display: block;
+    margin: 0 0 15px 30px;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: red;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.miniboardPlusBtn {
+    display: flex;
+    line-height: 50px;
+}
+
+
+.miniboard {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: darkslategray;
+    border-radius: 4px;
+}
+
+.minicell {
+    color: white;
+    width: 15px;
+    height: 15px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    line-height: 15px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.minicell:nth-child(3n +3) {
+    border-right: none;
+}
+
+.minicell:nth-child(1n +7) {
+    border-bottom: none;
+}
+
+.backBtn {
+    height: 30px;
+    margin: 10px 0 0 10px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgb(209, 110, 52);
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 561px) and (max-width: 767px) {
+    .main {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .board {
+        width: 100%;
+        display: inline-flex;
+        margin: 0 auto;
+    }
+    .info {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;   
+    }
+    .miniboardPlusBtn{
+        justify-content: space-evenly;
+    }
+    .resetBtn {
+        margin: 0 auto 10px auto;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 560px) {
+    .tictactoe_div h2 {
+        font-size: 1em;
+    }
+
+    .main {
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .board {
+        display: inline-flex;
+        margin: 0 auto;
+        width: 100%;        
+        box-sizing: border-box;
+        min-width: 300px;
+        max-width: 310px;
+    }
+    
+    .cell {
+        width: 100px;
+        max-width: 32%;
+        height: 100px;
+        line-height: 100px;
+        font-size: 70px;
+    }
+    .info {
+        /* min-width: 300px; */
+        width: 100%;
+        text-align: center;
+    }
+    .miniboardPlusBtn{
+        justify-content: space-evenly;
+    }
+    .resetBtn {
+        margin: 0 auto 10px auto;
+    }
 }

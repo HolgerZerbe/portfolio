@@ -9,6 +9,24 @@ class Image extends Component {
     opacity: []
   }
 
+  moodsIntervall = 0;
+
+  moodsFunc = () => {
+    let newBackcolor = [...this.state.backcolor];
+    let newOpacity = [...this.state.opacity];
+    let possibleColors=["white", "lightgrey", "silver", "darkgrey", "grey", "darkslategrey", "black"]
+
+    let index = Math.floor(Math.random()*this.state.backcolor.length)
+
+    newBackcolor[index] = possibleColors[Math.floor(Math.random()*possibleColors.length)]
+    newOpacity[index] = (Math.floor(Math.random()*80))/100
+    
+    this.setState({
+                  backcolor:[...newBackcolor],
+                  opacity: [...newOpacity]
+                });      
+  }
+
   componentDidMount(){
 
     for (let i=0; i<36; i++){
@@ -16,28 +34,17 @@ class Image extends Component {
       this.state.opacity.push(0.01);
     }
 
-    setInterval(()=>{
-
-      let newBackcolor = [...this.state.backcolor];
-      let newOpacity = [...this.state.opacity];
-      let possibleColors=["white", "lightgrey", "silver", "darkgrey", "grey", "darkslategrey", "black"]
-
-      let index = Math.floor(Math.random()*this.state.backcolor.length)
-
-      newBackcolor[index] = possibleColors[Math.floor(Math.random()*possibleColors.length)]
-      newOpacity[index] = (Math.floor(Math.random()*80))/100
-      
-      this.setState({
-                    backcolor:[...newBackcolor],
-                    opacity: [...newOpacity]
-                  });
-     }, 300);  
+    this.moodsIntervall = setInterval(this.moodsFunc, 300);  
+  }
+  
+  componentWillUnmount() {
+    clearInterval(this.moodsIntervall)
   }
 
-  
+
   render (){
     return (
-      <div className="golden_image">
+        <div className="golden_image">
         {this.state.backcolor.map((element, index) => <Square key={index} color={element} opac={this.state.opacity[index]} />)}
       </div>
     );

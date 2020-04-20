@@ -34,7 +34,7 @@ We would like to point out that data transmission over the Internet (e.g. when c
 We hereby expressly object to the use of contact data published within the framework of the imprint obligation by third parties for sending unsolicited advertising and information material. The site operators expressly reserve the right to take legal action in the event that unsolicited advertising information is sent, such as spam e-mails.
 </>}</p>
 <br/>
-                <p>{this.props.german ? <>Website Impressum von </>:<>Website legal notice of </>}<a target="_blank" href="https://www.impressum-generator.de">impressum-generator.de</a></p>
+                <p>{this.props.german ? <>Website Impressum von </>:<>Website legal notice of </>}<a target="_blank" rel="noopener noreferrer" href="https://www.impressum-generator.de">impressum-generator.de</a></p>
              
             </div>
         </div>

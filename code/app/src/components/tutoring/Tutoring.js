@@ -27,7 +27,7 @@ render() {
                 <p className="sorryP">{this.props.german ? <></> :<>Sorry, all texts are only available in German</>}</p>
                 <hr />
                 <ul>
-                {pdfsLink.map((pdf, index) =><li><Link className="tutoringLink"to={pdf} target="_blank" download>{pdfsName[index]}</Link></li>)}
+                {pdfsLink.map((pdf, index) =><li key={index}><Link className="tutoringLink"to={pdf} target="_blank" download>{pdfsName[index]}</Link></li>)}
                
                 </ul>
             </div>

@@ -1,5 +1,5 @@
 .portfolio_div{
-    
+    color:black;
 }
 
 .chooseProject {
@@ -12,6 +12,7 @@
 
 .projectTitle {
     font-weight: bolder;
+    color: rgb(252, 229, 162) !important;
     text-shadow: black 3px 3px 3px;
 }
 

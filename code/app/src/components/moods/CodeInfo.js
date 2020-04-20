@@ -16,9 +16,9 @@ Transmitting the box technique to code. Changing the mood of the picture by rand
                 <p>{this.props.german ? <>Bei ihm paaren sich gutes Coden mit Kreativität und logischen, lösungsorientertem Denken</> : <>
 He combines good coding with creativity and logical, solution-oriented thinking</>}</p>
                 <p></p>
-                <a target="_blank" href="https://www.linkedin.com/in/holger-zerbe">{this.props.german ? <>Holger Zerbe auf LinkedIn</> : <>Holger Zerbe on LinkedIn</>}</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/holger-zerbe">{this.props.german ? <>Holger Zerbe auf LinkedIn</> : <>Holger Zerbe on LinkedIn</>}</a>
                 <p></p>
-                <a target="_blank" href="https://www.github.com/HolgerZerbe">{this.props.german ? <>Holger Zerbe auf Github</> : <>Holger Zerbe on Github</>}</a>
+                <a target="_blank" rel="noopener noreferrer" href="https://www.github.com/HolgerZerbe">{this.props.german ? <>Holger Zerbe auf Github</> : <>Holger Zerbe on Github</>}</a>
                 <h4>E-Mail: </h4>
                 <a href="mailto:holger.zerbe@web.de">holger.zerbe@web.de</a>
             </div>

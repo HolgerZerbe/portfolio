@@ -68,7 +68,7 @@
 }
 
 .colorBtn:nth-child(4) {
-    background-image: linear-gradient(90deg, rgb(77, 229, 240), rgb(26, 178, 189), rgb(250, 141, 250), rgb(126, 42, 126));
+    background-image: linear-gradient(90deg, rgb(77, 229, 240), rgb(26, 178, 189), rgb(31,191,184), rgb(5,113,108),rgb(25,120,165), rgb(3,17,99));
 }
 
 @media only screen and (max-width:767px) {

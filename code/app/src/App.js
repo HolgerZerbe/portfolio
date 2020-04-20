@@ -30,7 +30,8 @@ class App extends Component {
  }
 
   componentDidMount(){
-    {(JSON.parse(localStorage.getItem("german"))) ? this.props.switchLanguage(true) : this.props.switchLanguage(false)}
+    
+    {(JSON.parse(!(localStorage.getItem("german")))) ? this.props.switchLanguage(true) : this.props.switchLanguage(false)}
 
     if (JSON.parse(localStorage.getItem("style"))
     ) {

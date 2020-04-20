@@ -35,7 +35,7 @@ We hereby expressly object to the use of contact data published within the frame
 </>}</p>
 <br/>
                 <p>{this.props.german ? <>Website Impressum von </>:<>Website legal notice of </>}<a target="_blank" rel="noopener noreferrer" href="https://www.impressum-generator.de">impressum-generator.de</a></p>
-             
+                <p>{this.props.german ? <>Bild (Laptop) von </> : <>Picture (laptop) of </>} <a target="_blank" rel="noopener noreferrer" href="https://pixabay.com/de/users/markusspiske-670330/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=599475">Markus Spiske</a>{this.props.german ? <> auf </> : <> on </>}<a target="_blank" rel="noopener noreferrer" href="https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=599475">Pixabay</a></p>
             </div>
         </div>
         </>

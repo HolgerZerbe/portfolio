@@ -1,7 +1,7 @@
 .about_div {
-    padding: 20px;
-    height: 100%;
-    box-sizing: border-box;
+  padding: 20px;
+  height: calc(100vh - 120px);
+  box-sizing: border-box;;
 }
 
 .about_div h2 {
@@ -9,18 +9,50 @@
 }
 
 .inner_about {
-  min-height: 100%;
+  height: 100%;
   background-color: rgba(245, 245, 245, 0.5);
 }
 
+.linkLine {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 10px 20px;
+}
+
 .resumeLink {
-  font-size: 1.2em;
+  font-size: 1em;
   color: whitesmoke;
   background-color: rgb(39, 42, 44);
   text-decoration: none;
-  padding: 10px 20px;
-  display: inline-block;
+  padding: 10px 30px;
+  display: inline-flex;
+  align-items: center;
 }
 
-@media only screen and (max-width: 767px) {
+.icon {
+  margin: 0 auto;
+}
+
+
+
+@media only screen and (min-width: 405px) and (max-width: 767px) {
+
+  .linkLine {
+    padding: 0 10px 5px 10px;
   }
+  .resumeLink {
+    font-size: 0.8em;
+    padding: 5px 10px;
+  }
+}
+
+@media only screen and (max-width: 404px) {
+  
+  .linkLine {
+    padding: 0 10px 5px 10px;
+  }
+  .resumeLink {
+    font-size: 0.65em;
+    padding: 3px 6px;
+  }
+}

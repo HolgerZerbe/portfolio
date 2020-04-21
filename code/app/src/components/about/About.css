@@ -1,11 +1,49 @@
 .about_div {
   padding: 20px;
   height: calc(100vh - 120px);
-  box-sizing: border-box;;
+  box-sizing: border-box;
+  ;
+}
+
+.about_headline {
+  margin: 0;
+  padding: 20px 20px 0 20px;
+  display: flex;
+}
+
+.about_main {
+  margin: 0;
+  padding: 0 20px 20px 20px;
 }
 
 .about_div h2 {
   margin: 0;
+  width: 90%;
+  margin-right: 20px;
+  color: rgb(252, 229, 162);
+  text-shadow: black 3px 3px 3px;
+}
+
+.about_main h4 {
+  margin: 0;
+  padding: 0;  
+}
+
+.about_main p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.1em;
+}
+
+.aboutPhotoDiv {}
+
+.aboutPhoto {
+  width: 150px;
+  height: 150px;
+  background-color: darkgray;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px 2px rgb(90, 88, 88);
 }
 
 .inner_about {
@@ -17,7 +55,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0 20px 10px 20px;
-}
+} 
 
 .resumeLink {
   font-size: 1em;
@@ -29,30 +67,86 @@
   align-items: center;
 }
 
+.downloadInAbout {
+  font-size: 0.8em
+}
+
 .icon {
-  margin: 0 auto;
+  margin: 0 auto; 
 }
 
 
 
 @media only screen and (min-width: 405px) and (max-width: 767px) {
-
+  .about_div {
+    padding: 20px;
+    height: auto;
+  }
   .linkLine {
     padding: 0 10px 5px 10px;
   }
+
   .resumeLink {
     font-size: 0.8em;
     padding: 5px 10px;
+  }
+
+  .about_div h2 {
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+  .about_headline {
+    padding: 10px;
+  }
+  .about_main {
+    padding: 10px;
+  }
+  .about_main h4 {
+    font-size: 0.8em;
+  }
+  .about_main p {
+    font-size: 0.7em;
   }
 }
 
 @media only screen and (max-width: 404px) {
   
+  .about_div {
+    height: auto;
+  }
+
+  .about_main {
+    height: auto;
+  }
+
   .linkLine {
     padding: 0 10px 5px 10px;
   }
+  
   .resumeLink {
     font-size: 0.65em;
     padding: 3px 6px;
+  }
+
+  .about_div h2 {
+    font-size: 0.8em;
+    line-height: 1em;
+  }
+  .about_headline {
+    padding: 10px;
+  }
+
+  .aboutPhoto {
+    width: 100px;
+    height: 100px;
+  }
+  .about_main {
+    padding: 10px;
+  }
+  .about_main h4 {
+    font-size: 0.8em;
+  }
+  .about_main p {
+    font-size: 0.7em;
   }
 }

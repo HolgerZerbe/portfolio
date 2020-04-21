@@ -117,14 +117,11 @@
     background-color : rgb(77, 229, 240);
     color: black;
     border-radius: 20px 20px 0 0;
-    /* box-shadow: whitesmoke -3px -3px 2px; */
-    transition: border-radius 1s, background-color 1s, color 1s, box-shadow 1s;
+    transition: border-radius 1s, background-color 1s;
 }
 
 .linkColor4:hover {
     background-color: whitesmoke; 
-    /* color:rgb(26, 178, 189); */
-    /* box-shadow: rgb(26, 178, 189) 3px 3px 2px; */
     border-radius: 0 0 20px 20px;
     text-decoration: underline; 
     font-weight: bolder;

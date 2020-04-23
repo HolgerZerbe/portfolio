@@ -22,23 +22,27 @@
     margin-bottom: 35px;
 }
 
-    .photoStartPage {
-    margin: 20px auto 0 auto;
-    background-color: lightgrey;
-    width: 200px;
-    height: 200px;
-    border: 3px solid rgb(252, 229, 162);
-    border-radius: 50%;
-    position: relative;
-    display: inline-block;
+.photoStartPage {
+margin: 20px auto 0 auto;
+background-color: lightgrey;
+width: 200px;
+height: 200px;
+border: 3px solid rgb(252, 229, 162);
+border-radius: 50%;
+position: relative;
+display: inline-block;
 }
 
 .staticPhoto {
-    left: 103px;
+    left: 206px;
 }
 
-.fadingPhoto {
-    left: -103px;
+.fadingPhoto1 {
+    left: 0;
+}
+
+.fadingPhoto2 {
+    left: -206px;
 }
 
 .styleHeadline {
@@ -89,16 +93,20 @@
     }
 
     .photoStartPage {
-        width: 150px;
-        height: 150px;
+        width: 100px;
+        height: 100px;
     }
 
     .staticPhoto {
-        left: 78px;
+        left: 106px;
     }
     
-    .fadingPhoto {
-        left: -78px;
+    .fadingPhoto1 {
+        left: 0;
+    }
+
+    .fadingPhoto2 {
+        left: -106px;
     }
 
     .languageHeadline {

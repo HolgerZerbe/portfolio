@@ -39,7 +39,7 @@ class StartPage extends Component {
     }
   
     componentDidMount(){
-      this.opacityIntervall = setInterval(this.changeOpacity, 10);  
+      this.opacityIntervall = setInterval(this.changeOpacity, 1);  
     }
     
     componentWillUnmount() {

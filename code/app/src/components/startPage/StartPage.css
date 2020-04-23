@@ -7,6 +7,7 @@
 
 .photo {
     text-align: center;
+    position: relative;
 }
 
 .welcome {
@@ -21,13 +22,23 @@
     margin-bottom: 35px;
 }
 
-.photoStartPage {
-    margin-top: 20px;
+    .photoStartPage {
+    margin: 20px auto 0 auto;
     background-color: lightgrey;
     width: 200px;
     height: 200px;
     border: 3px solid rgb(252, 229, 162);
     border-radius: 50%;
+    position: relative;
+    display: inline-block;
+}
+
+.staticPhoto {
+    left: 103px;
+}
+
+.fadingPhoto {
+    left: -103px;
 }
 
 .styleHeadline {
@@ -80,6 +91,14 @@
     .photoStartPage {
         width: 150px;
         height: 150px;
+    }
+
+    .staticPhoto {
+        left: 78px;
+    }
+    
+    .fadingPhoto {
+        left: -78px;
     }
 
     .languageHeadline {

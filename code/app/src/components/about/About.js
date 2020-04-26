@@ -39,7 +39,7 @@ Full stack developer at the DCI Digital Career Institute gGmbH and by mine work 
                     </div>
 
                     <div className = "linkLine downloadInAbout">                   
-                    {this.props.german ? <Link className="resumeLink" to="/cvsPDF/Holger_Zerbe_Lebenslauf.pdf" target="_blank" download><>Download<br/>Lebenslauf</></Link> : <Link className="resumeLink" to="/cvsPDF/Holger_Zerbe_CV_english.pdf" target="_blank" download><>Download<br/>Resume</></Link>}
+                    {this.props.german ? <Link className="resumeLink" to="/cvsPDF/Holger_Zerbe_Lebenslauf.pdf" target="_blank" download><>Download<br/>Lebenslauf</></Link> : <Link className="resumeLink" to="/cvsPDF/Holger_Zerbe_Resume.pdf" target="_blank" download><>Download<br/>Resume</></Link>}
                     <a className="resumeLink" href="https://github.com/HolgerZerbe" target="_blank" rel="noopener noreferrer">  <FontAwesomeIcon  className="icon" icon={faGithub}   size="2x"  color="white" /></a>
                     <a className="resumeLink" href="https://www.linkedin.com/in/holger-zerbe/" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon className="icon"icon={faLinkedin} size="2x"  color="white" /></a>
                     <a className="resumeLink" href="mailto: holger.Zerbe@web.de"><FontAwesomeIcon className="icon"icon={faAt} size="2x" color="white" /></a>

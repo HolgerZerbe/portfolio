@@ -59,7 +59,7 @@ class App extends Component {
           </div>
           <div className="changingAreaApp">
             <Switch>
-                <Route exact path={process.env.PUBLIC_URL + "/"} component={StartPage} />
+                <Route exact path={"portfolio/"} component={StartPage} />
                 <Route exact path={process.env.PUBLIC_URL + "/about"} component={About} />
                 <Route exact path={process.env.PUBLIC_URL + "/myPortfolio"} component={MyPortfolio} />
                 <Route exact path={process.env.PUBLIC_URL + "/impressum"} component={Impressum} />

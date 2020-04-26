@@ -19,7 +19,7 @@ import { faGithub ,faLinkedin } from '@fortawesome/free-brands-svg-icons'
                             <br/>
                             <h2>{this.props.german ? <>"Gutes Coden vereint Kreativität, Logik, Mathematik und lösungsorientiertes Denken"</> : <>"Good coding combines creativity, logic, mathematics and solution-oriented thinking"</>}</h2>
                         </div>
-                        <div className="aboutPhotoDiv"><img className="aboutPhoto" src="./portfolio/image/holger.png" alt="Holger Zerbe"></img></div>
+                        <div className="aboutPhotoDiv"><img className="aboutPhoto" src="./image/holger.png" alt="Holger Zerbe"></img></div>
                     </div>
                     <div className="about_main">
                         <h4>{this.props.german ? <>Mein Werdegang</> : <>My career</>}</h4>

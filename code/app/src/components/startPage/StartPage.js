@@ -67,9 +67,9 @@ class StartPage extends Component {
             <div className="startPage_div">
                 <h2 className="welcome">Willkommen, Bienvenue, Welcome!</h2>
                 <div className="photo">
-                    <img className = "photoStartPage staticPhoto" style= {{"opacity": this.state.opacity1 }} src="./portfolio/image/HZ_Logo.jpg" alt="Holger Zerbe Logo"></img>
-                    <img className = "photoStartPage fadingPhoto1" style={{"opacity": this.state.opacity2 }} src="./portfolio/image/holger.png" alt="Holger Zerbe"></img>
-                    <img className = "photoStartPage fadingPhoto2" style={{"opacity": this.state.opacity3 }} src="./portfolio/image/code.png" alt="Holger Zerbe"></img>
+                    <img className = "photoStartPage staticPhoto" style= {{"opacity": this.state.opacity1 }} src="./image/HZ_Logo.jpg" alt="Holger Zerbe Logo"></img>
+                    <img className = "photoStartPage fadingPhoto1" style={{"opacity": this.state.opacity2 }} src="./image/holger.png" alt="Holger Zerbe"></img>
+                    <img className = "photoStartPage fadingPhoto2" style={{"opacity": this.state.opacity3 }} src="./image/code.png" alt="Holger Zerbe"></img>
                     </div>
                 <h2 className="homepage">{this.props.german ? <>auf meiner Portfolio-Seite</> : <>to my portfolio site</>}</h2>
         <h3 className="styleHeadline">{this.props.german ? <>Bitte wähle einen Stil</> : <> Please choose your favourite style</>}</h3>

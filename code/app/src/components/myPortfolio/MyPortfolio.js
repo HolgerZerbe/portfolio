@@ -14,25 +14,25 @@ class Portfolio extends Component {
                     linkName: config.gh_pages + "/moods",
                     target: "",
                     name: "moods",
-                    imgSrc: process.env.PUBLIC_URL + "/image/moods.png"
+                    imgSrc: process.env.PUBLIC_URL + "./image/moods.png"
                 },
                 {
                     linkName: config.gh_pages + "/tictactoe",
                     target: "",
                     name: "tictactoe",
-                    imgSrc: process.env.PUBLIC_URL + "/image/tictactoe.png"
+                    imgSrc: process.env.PUBLIC_URL + "./image/tictactoe.png"
                 },
                 {   
                     linkName: config.gh_pages + "/foodata",
                     target: "_blank",
                     name: "www.foodata.info",
-                    imgSrc: process.env.PUBLIC_URL + "/image/foodata.png"
+                    imgSrc: process.env.PUBLIC_URL + "./image/foodata.png"
                 },
                 {   
                     linkName: config.gh_pages + "/tutoring",
                     target: "",
                     name: "tutoring downloads",
-                    imgSrc: process.env.PUBLIC_URL + "/image/tutoring.png"
+                    imgSrc: process.env.PUBLIC_URL + "./image/tutoring.png"
                 }
             ] 
         }

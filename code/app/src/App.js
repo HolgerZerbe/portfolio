@@ -47,7 +47,7 @@ class App extends Component {
 
 
   render (){
-    
+    console.log(window.location.href)
     return (
       <Router> 
         <div className="mainApp">

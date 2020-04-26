@@ -24,7 +24,7 @@ class Portfolio extends Component {
                 },
                 {   
                     linkName: config.gh_pages + "/foodata",
-                    target: "_blank",
+                    target: "",
                     name: "www.foodata.info",
                     imgSrc: "./image/foodata.png"
                 },

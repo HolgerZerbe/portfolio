@@ -14,6 +14,7 @@ import NotFound from './components/notFound/NotFound';
 import Moods from './components/moods/Moods';
 import Tictactoe from './components/tictactoe/Tictactoe';
 import Tutoring from './components/tutoring/Tutoring';
+import Foodata from './components/foodata/Foodata';
 
 import {switchLanguage} from './actions'
 import {switchStyle} from './actions'
@@ -47,7 +48,6 @@ class App extends Component {
 
 
   render (){
-    console.log(window.location.href)
     return (
       <Router> 
         <div className="mainApp">
@@ -68,10 +68,7 @@ class App extends Component {
                 <Route exact path={config.gh_pages + "/moods"} component={Moods} />
                 <Route exact path={config.gh_pages + "/tictactoe"} component={Tictactoe} />
                 <Route exact path={config.gh_pages + "/tutoring"} component={Tutoring} />
-                <Route exact path={config.gh_pages + '/foodata'} component={() => { 
-     window.location.href = 'https://www.foodata.info'; 
-     return null;
-}}/>
+                <Route exact path={config.gh_pages + '/foodata'} component={Foodata} />
                 <Route component={NotFound} />
             </Switch>
 

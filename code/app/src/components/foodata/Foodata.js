@@ -15,7 +15,8 @@ render() {
         <>
         <div className="foodata_div">
             <div className="inner_foodata">
-                <h3>{this.props.german ? <>Wenn Sie nicht automatisch weitergeleitet werden, klicken Sie bitte auf den nachfolgenden Link: </> :<>If you are not redirected automatically, please click on the following link: </>}<a target="_blank" rel="noopener noreferrer" href='https://www.foodata.info'>www.foodata.info</a></h3>
+                <h3>{this.props.german ? <>Wenn Sie nicht automatisch weitergeleitet werden, klicken Sie bitte auf den nachfolgenden Link: </> :<>If you are not redirected automatically, please click on the following link: </>}</h3>
+                <h2><a target="_blank" rel="noopener noreferrer" href='https://www.foodata.info'>www.foodata.info</a></h2>
               
             </div>
         </ div>

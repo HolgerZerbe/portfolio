@@ -4,31 +4,32 @@ import {Link} from 'react-router-dom';
 import { connect } from 'react-redux';
 
 import './MyPortfolio.css'
+import config from '../../config.json';
 
  
 class Portfolio extends Component {
 
     state = {projects : [
                 {
-                    linkName: "/moods",
+                    linkName: config.gh_pages + "/moods",
                     target: "",
                     name: "moods",
                     imgSrc: "/image/moods.png"
                 },
                 {
-                    linkName: "/tictactoe",
+                    linkName: config.gh_pages + "/tictactoe",
                     target: "",
                     name: "tictactoe",
                     imgSrc: "/image/tictactoe.png"
                 },
                 {   
-                    linkName: "/foodata",
+                    linkName: config.gh_pages + "/foodata",
                     target: "_blank",
                     name: "www.foodata.info",
                     imgSrc: "/image/foodata.png"
                 },
                 {   
-                    linkName: "/tutoring",
+                    linkName: config.gh_pages + "/tutoring",
                     target: "",
                     name: "tutoring downloads",
                     imgSrc: "/image/tutoring.png"

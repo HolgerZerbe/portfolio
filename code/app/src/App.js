@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import './App.css';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {connect} from 'react-redux';
+import config from "./config.json";
+
 
 import Navbar from './components/navbar/Navbar';
 import StartPage from './components/startPage/StartPage';
@@ -59,14 +61,14 @@ class App extends Component {
           </div>
           <div className="changingAreaApp">
             <Switch>
-                <Route exact path={"portfolio/"} component={StartPage} />
-                <Route exact path={process.env.PUBLIC_URL + "/about"} component={About} />
-                <Route exact path={process.env.PUBLIC_URL + "/myPortfolio"} component={MyPortfolio} />
-                <Route exact path={process.env.PUBLIC_URL + "/impressum"} component={Impressum} />
-                <Route exact path={process.env.PUBLIC_URL + "/moods"} component={Moods} />
-                <Route exact path={process.env.PUBLIC_URL + "/tictactoe"} component={Tictactoe} />
-                <Route exact path={process.env.PUBLIC_URL + "/tutoring"} component={Tutoring} />
-                <Route exact path={process.env.PUBLIC_URL + '/foodata'} component={() => { 
+                <Route exact path={config.gh_pages + "/"} component={StartPage} />
+                <Route exact path={config.gh_pages + "/about"} component={About} />
+                <Route exact path={config.gh_pages + "/myPortfolio"} component={MyPortfolio} />
+                <Route exact path={config.gh_pages + "/impressum"} component={Impressum} />
+                <Route exact path={config.gh_pages + "/moods"} component={Moods} />
+                <Route exact path={config.gh_pages + "/tictactoe"} component={Tictactoe} />
+                <Route exact path={config.gh_pages + "/tutoring"} component={Tutoring} />
+                <Route exact path={config.gh_pages + '/foodata'} component={() => { 
      window.location.href = 'https://foodata.info'; 
      return null;
 }}/>

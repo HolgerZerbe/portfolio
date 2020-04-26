@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import './Navbar.css'
 import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
-
+import config from '../../config.json';
 
 
 class Navbar extends Component {
@@ -23,10 +23,10 @@ class Navbar extends Component {
         return (
             <div className = {this.state.navbarClass}>
 
-                <Link className={this.state.linkClass} to={process.env.PUBLIC_URL + "/"}>{this.props.german ? <>Start</> : <>Home</>}</Link>
-                <Link className={this.state.linkClass} to="/about">{this.props.german ? <>Über mich</> : <>About Me</>}</Link>
-                <Link className={this.state.linkClass} to="/myPortfolio">{this.props.german ? <>Mein Portfolio</> : <>My Portfolio</>}</Link>
-                <Link className={this.state.linkClass} to="/impressum">{this.props.german ? <>Impressum</> : <>Legal Notice</>}</Link>
+                <Link className={this.state.linkClass} to={config.gh_pages + "/"}>{this.props.german ? <>Start</> : <>Home</>}</Link>
+                <Link className={this.state.linkClass} to={config.gh_pages + "/about"}>{this.props.german ? <>Über mich</> : <>About Me</>}</Link>
+                <Link className={this.state.linkClass} to={config.gh_pages + "/myPortfolio"}>{this.props.german ? <>Mein Portfolio</> : <>My Portfolio</>}</Link>
+                <Link className={this.state.linkClass} to={config.gh_pages + "/impressum"}>{this.props.german ? <>Impressum</> : <>Legal Notice</>}</Link>
 
             </div>
         )

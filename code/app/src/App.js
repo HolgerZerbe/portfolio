@@ -69,7 +69,7 @@ class App extends Component {
                 <Route exact path={config.gh_pages + "/tictactoe"} component={Tictactoe} />
                 <Route exact path={config.gh_pages + "/tutoring"} component={Tutoring} />
                 <Route exact path={config.gh_pages + '/foodata'} component={() => { 
-     window.location.href = '//foodata.info'; 
+     window.location.href = 'https://www.foodata.info'; 
      return null;
 }}/>
                 <Route component={NotFound} />

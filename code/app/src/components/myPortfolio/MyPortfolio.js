@@ -14,7 +14,7 @@ class Portfolio extends Component {
                     linkName: config.gh_pages + "/moods",
                     target: "",
                     name: "moods",
-                    imgSrc: process.env.PUBLIC_URL + "../image/moods.png"
+                    imgSrc: "./portfolio/image/moods.png"
                 },
                 {
                     linkName: config.gh_pages + "/tictactoe",
@@ -26,13 +26,13 @@ class Portfolio extends Component {
                     linkName: config.gh_pages + "/foodata",
                     target: "_blank",
                     name: "www.foodata.info",
-                    imgSrc: process.env.PUBLIC_URL + "../image/foodata.png"
+                    imgSrc: "./portfolio/image/foodata.png"
                 },
                 {   
                     linkName: config.gh_pages + "/tutoring",
                     target: "",
                     name: "tutoring downloads",
-                    imgSrc: process.env.PUBLIC_URL + "../image/tutoring.png"
+                    imgSrc: "./portfolio/image/tutoring.png"
                 }
             ] 
         }

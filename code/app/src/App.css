@@ -94,12 +94,12 @@ html body {
 }
 
 .germanFlag {
-  background: url(/image/german.png);
+  background: url(/portfolio/image/german.png);
   background-size: contain;
 }
 
 .englishFlag {
-  background: url(/image/english.png);
+  background: url(/portfolio/image/english.png);
   background-size: contain;
 }
 

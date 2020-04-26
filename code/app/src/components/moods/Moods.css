@@ -25,7 +25,7 @@
     height: 480px;
     border: 5px solid white;
     margin: 0 auto;
-    background-image: url(/image/goldene-entspannung.jpg);
+    background-image: url(./image/goldene-entspannung.jpg);
     background-size: cover;
     display: flex;
     flex-wrap: wrap;

@@ -67,7 +67,7 @@ class StartPage extends Component {
             <div className="startPage_div">
                 <h2 className="welcome">Willkommen, Bienvenue, Welcome!</h2>
                 <div className="photo">
-                    <img className = "photoStartPage staticPhoto" style= {{"opacity": this.state.opacity1 }} src="./image/HZ_Logo.jpg" alt="Holger Zerbe Logo"></img>
+                    <img className = "photoStartPage staticPhoto" style= {{"opacity": this.state.opacity1 }} src="./../image/HZ_Logo.jpg" alt="Holger Zerbe Logo"></img>
                     <img className = "photoStartPage fadingPhoto1" style={{"opacity": this.state.opacity2 }} src="./image/holger.png" alt="Holger Zerbe"></img>
                     <img className = "photoStartPage fadingPhoto2" style={{"opacity": this.state.opacity3 }} src="./image/code.png" alt="Holger Zerbe"></img>
                     </div>

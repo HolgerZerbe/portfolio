@@ -23,7 +23,7 @@ class Portfolio extends Component {
                     imgSrc: "./image/tictactoe.png"
                 },
                 {   
-                    linkName: config.gh_pages + "/foodata",
+                    linkName: config.gh_pages + "/",
                     target: "_blank",
                     name: "www.foodata.info",
                     imgSrc: "./image/foodata.png"

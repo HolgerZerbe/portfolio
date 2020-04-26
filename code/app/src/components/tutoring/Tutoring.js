@@ -15,7 +15,7 @@ render() {
     let pdfsName = [];
     
     for (let elem of this.state.pdfs) {
-        pdfsLink.push("/tutoringPDF/" + elem);
+        pdfsLink.push("./tutoringPDF/" + elem);
         pdfsName.push(elem.split(".")[0]);
     }
 

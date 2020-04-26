@@ -66,7 +66,7 @@ class App extends Component {
                 <Route exact path={process.env.PUBLIC_URL + "/moods"} component={Moods} />
                 <Route exact path={process.env.PUBLIC_URL + "/tictactoe"} component={Tictactoe} />
                 <Route exact path={process.env.PUBLIC_URL + "/tutoring"} component={Tutoring} />
-                <Route exact path='/foodata' component={() => { 
+                <Route exact path={process.env.PUBLIC_URL + '/foodata'} component={() => { 
      window.location.href = 'https://foodata.info'; 
      return null;
 }}/>

@@ -56,17 +56,16 @@ html body {
 }
 
 .headlineBtn {
-  width: 100%;
   box-sizing: border-box;
   display: flex;
   margin-left: 4%;
   margin-top: 0;
   margin-right: 4%;
   padding: 10px 0;
-}
+  justify-content: space-between;
+} 
 
 .headline {
-  width: 80%;
   margin: 0;
   padding: 0;
 }
@@ -81,19 +80,17 @@ html body {
   background-color: rgb(81, 83, 83);
 }
 
-.languageBtn {
-  display: flex;
-  justify-content: space-between;
-  margin: auto 0;
-}
-
 .header button {
   width: 50px;
   height: 25px;
   margin-left: 5px;
+  margin-top: calc(23px / 2);
   border-style: none;
   border-radius: 5%;
   cursor: pointer;
+  display: block;
+  
+
 }
 
 .germanFlag {
@@ -106,26 +103,17 @@ html body {
   background-size: contain;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 900px) {
-  .headline {
-    width: 75%;
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 767px) {
-  .headline {
-    width: 70%;
-  }
-}
-
 @media only screen and (min-width: 375px) and (max-width: 599px) {
   .headline {
     font-size: 1.1em;
-    width: 65%;
   }
 
   .header {
     min-height: 90px;
+  }
+
+  .header button {
+    margin-top: 0;
   }
 
   .changingAreaApp {
@@ -135,12 +123,15 @@ html body {
 
 @media only screen and (max-width: 374px) {
   .headline {
-    width: 60%;
     font-size: 1em;
   }
 
   .header {
     min-height: 90px;
+  }
+
+  .header button {
+    margin-top: 0;
   }
 
   .changingAreaApp {

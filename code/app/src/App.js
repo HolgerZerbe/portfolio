@@ -53,7 +53,7 @@ class App extends Component {
           <div className={this.state.headerColor}>
             <div className="headlineBtn">
               <h1 className="headline">&lt;Holger_Zerbe /&gt;</h1>
-              <div className="languageBtn"><button className="germanFlag" onClick={()=>{this.changelanguage(true)}}></button><button className="englishFlag" onClick={()=>{this.changelanguage(false)}}></button></div>  
+              {this.props.german === false ? <button className="germanFlag" onClick={()=>{this.changelanguage(true)}}></button> : <button className="englishFlag" onClick={()=>{this.changelanguage(false)}}></button>}  
             </div>
             <Navbar />
           </div>

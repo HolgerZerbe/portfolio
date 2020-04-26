@@ -20,7 +20,7 @@ class Portfolio extends Component {
                     linkName: config.gh_pages + "/tictactoe",
                     target: "",
                     name: "tictactoe",
-                    imgSrc: process.env.PUBLIC_URL + "../image/tictactoe.png"
+                    imgSrc: process.env.PUBLIC_URL + "./portfolio/image/tictactoe.png"
                 },
                 {   
                     linkName: config.gh_pages + "/foodata",

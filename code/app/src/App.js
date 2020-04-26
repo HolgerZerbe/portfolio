@@ -6,7 +6,7 @@ import {connect} from 'react-redux';
 import Navbar from './components/navbar/Navbar';
 import StartPage from './components/startPage/StartPage';
 import About from './components/about/About';
-import Portfolio from './components/portfolio/Portfolio';
+import MyPortfolio from './components/myPortfolio/MyPortfolio';
 import Impressum from './components/impressum/Impressum';
 import NotFound from './components/notFound/NotFound';
 import Moods from './components/moods/Moods';
@@ -61,7 +61,7 @@ class App extends Component {
             <Switch>
                 <Route exact path={process.env.PUBLIC_URL + "/"} component={StartPage} />
                 <Route exact path="/about" component={About} />
-                <Route exact path="/portfolio" component={Portfolio} />
+                <Route exact path="/myPortfolio" component={MyPortfolio} />
                 <Route exact path="/impressum" component={Impressum} />
                 <Route exact path="/moods" component={Moods} />
                 <Route exact path="/tictactoe" component={Tictactoe} />

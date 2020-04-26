@@ -3,7 +3,7 @@ import CarouselSlider from 'react-carousel-slider';
 import {Link} from 'react-router-dom';
 import { connect } from 'react-redux';
 
-import './Portfolio.css'
+import './MyPortfolio.css'
 
  
 class Portfolio extends Component {

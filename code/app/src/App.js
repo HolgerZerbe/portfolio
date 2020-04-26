@@ -60,12 +60,12 @@ class App extends Component {
           <div className="changingAreaApp">
             <Switch>
                 <Route exact path={process.env.PUBLIC_URL + "/"} component={StartPage} />
-                <Route exact path="/about" component={About} />
-                <Route exact path="/myPortfolio" component={MyPortfolio} />
-                <Route exact path="/impressum" component={Impressum} />
-                <Route exact path="/moods" component={Moods} />
-                <Route exact path="/tictactoe" component={Tictactoe} />
-                <Route exact path="/tutoring" component={Tutoring} />
+                <Route exact path={process.env.PUBLIC_URL + "/about"} component={About} />
+                <Route exact path={process.env.PUBLIC_URL + "/myPortfolio"} component={MyPortfolio} />
+                <Route exact path={process.env.PUBLIC_URL + "/impressum"} component={Impressum} />
+                <Route exact path={process.env.PUBLIC_URL + "/moods"} component={Moods} />
+                <Route exact path={process.env.PUBLIC_URL + "/tictactoe"} component={Tictactoe} />
+                <Route exact path={process.env.PUBLIC_URL + "/tutoring"} component={Tutoring} />
                 <Route exact path='/foodata' component={() => { 
      window.location.href = 'https://foodata.info'; 
      return null;

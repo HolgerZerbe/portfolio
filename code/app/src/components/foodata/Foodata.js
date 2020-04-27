@@ -6,6 +6,9 @@ import {Link} from 'react-router-dom';
 class Foodata extends Component {
 
 
+componentDidMount(){
+    window.location.href="www.foodata.info"
+    }
 
 
 render() {

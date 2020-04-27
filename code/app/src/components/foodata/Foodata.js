@@ -7,7 +7,7 @@ class Foodata extends Component {
 
 
 componentDidMount(){
-    window.location.href="www.foodata.info"
+    window.location.href="https:://www.foodata.info"
     }
 
 

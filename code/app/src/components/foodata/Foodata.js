@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import './Foodata.css'
 import {connect} from 'react-redux';
-import {Link} from 'react-router-dom';
 
 class Foodata extends Component {
 
-
-componentDidMount(){
-    window.location.replace("https://www.foodata.info")
-    }
+// DOES NOT WORK IF USING GITHUB.PAGES!!! 
+// componentDidMount(){
+//     window.location.href="https://www.foodata.info"
+//     }
 
 
 render() {

@@ -32,7 +32,7 @@ Fullstack Developer bei der DCI Digital Career Institute gGmbH und durch meine
 Arbeit als Tutor im Web Developement.</> : <>I deepened my passion for coding as part of my one-year, practice-oriented full-time training as a
 Full stack developer at the DCI Digital Career Institute gGmbH and by mine work as a tutor in web development.</>}</p>    
                         <h4>{this.props.german ? <>Meine digitalen Skills</> : <>My digital skills</>}</h4>
-                        <p>HTML, CSS, JavaScript (ES2015+), Linux, Git, GitHub, Bootstrap, jQuery, React.js, Redux, Node.js, Express, MongoDB, MySQL.</p>
+                        <p>HTML, CSS, JavaScript (ES2015+), PHP7, Linux, Git, GitHub, Bootstrap, jQuery, React.js, Laravel, Redux, Node.js, Express, MongoDB, MySQL.</p>
                         <h4>{this.props.german ? <>Mein Selbstverständnis</> : <>My self-image</>}</h4>
                         <p>{this.props.german ? <>Beim Coden sollte der Nutzen für den User immer wichtiger sein als das Design.</> : <>When coding, the benefit for the user should always be more important than the design.</>}    </p>
                    
